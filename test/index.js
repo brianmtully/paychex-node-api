@@ -62,6 +62,27 @@ describe('Paychex', function(){
 
 
     describe('Company', function(){
+      var company;
+
+      before(function() {
+        return Paychex.Companies.get('00UJ9ANUIKH2V0MTN8SH').then(function(comp){
+          company = comp;
+          //console.log(company);
+          return company;
+        })
+      });
+
+      describe('payPeriods()', function(){
+
+        it('returns company pay periods', function(){
+          return company.payPeriods().then(function(payPeriods){
+            console.log(payPeriods)
+            expect(payPeriods).to.be.an('array');
+          })
+        });
+
+
+      });
 
 
     });
