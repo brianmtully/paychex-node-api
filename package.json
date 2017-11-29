@@ -1,6 +1,6 @@
 {
   "name": "paychex-node-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Paychex API Node Module",
   "main": "./lib/paychex",
   "scripts": {
@@ -12,9 +12,9 @@
   ],
   "author": "Brian M Tully",
   "license": "GPL-3.0",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/brianmtully/paychex-node-api.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianmtully/paychex-node-api.git"
   },
   "dependencies": {
     "request": "2.83.0",
