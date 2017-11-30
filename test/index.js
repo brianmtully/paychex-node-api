@@ -84,6 +84,30 @@ describe('Paychex', function(){
 
       });
 
+      describe('payComponents()', function(){
+
+        it('returns company pay components', function(){
+          return company.payComponents().then(function(payComponents){
+            console.log(payComponents)
+            expect(payComponents).to.be.an('array');
+          })
+        });
+
+
+      });
+
+      describe('organizations()', function(){
+
+        it('returns organizations for company', function(){
+          return company.organizations().then(function(organizations){
+            console.log(organizations)
+            expect(organizations).to.be.an('array');
+          })
+        });
+
+
+      });
+
 
     });
 
